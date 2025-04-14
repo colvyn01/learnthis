@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete C Programming Course</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/c.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Complete C Programming Course</h1>
+        <div class="header-buttons">
+            <button id="theme-toggle">Toggle Dark Mode</button>
+            <button id="save-progress">Save Progress</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Course Modules</h3>
+                <button id="toggle-sidebar" class="mobile-only">≡</button>
+            </div>
+            <ul id="course-modules">
+                <li class="module-item">
+                    <div class="module-header">Module 1: Introduction to C</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="intro-to-c">Introduction to C Programming</li>
+                        <li data-lesson="setting-up">Setting Up Your Environment</li>
+                        <li data-lesson="first-program">Your First C Program</li>
+                        <li data-lesson="compilation">Compilation Process</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 2: Basic Syntax & Data Types</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="variables">Variables & Constants</li>
+                        <li data-lesson="data-types">Data Types</li>
+                        <li data-lesson="operators">Operators</li>
+                        <li data-lesson="input-output">Input & Output</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 3: Control Flow</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="if-else">Conditional Statements</li>
+                        <li data-lesson="switch">Switch Statements</li>
+                        <li data-lesson="loops">Loops</li>
+                        <li data-lesson="break-continue">Break & Continue</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 4: Functions</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="functions-intro">Function Basics</li>
+                        <li data-lesson="parameters">Parameters & Return Values</li>
+                        <li data-lesson="recursion">Recursion</li>
+                        <li data-lesson="storage-classes">Storage Classes</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 5: Arrays & Strings</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="arrays">Arrays</li>
+                        <li data-lesson="multi-arrays">Multi-dimensional Arrays</li>
+                        <li data-lesson="strings">Strings</li>
+                        <li data-lesson="string-functions">String Functions</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 6: Pointers</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="pointers-basic">Pointer Basics</li>
+                        <li data-lesson="pointer-arithmetic">Pointer Arithmetic</li>
+                        <li data-lesson="pointers-arrays">Pointers & Arrays</li>
+                        <li data-lesson="pointers-functions">Pointers & Functions</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 7: Structures & Unions</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="structures">Structures</li>
+                        <li data-lesson="nested-structs">Nested Structures</li>
+                        <li data-lesson="unions">Unions</li>
+                        <li data-lesson="typedef">Typedef</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 8: File I/O</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="file-basics">File Handling Basics</li>
+                        <li data-lesson="read-write">Reading & Writing Files</li>
+                        <li data-lesson="binary-files">Binary Files</li>
+                        <li data-lesson="error-handling">Error Handling</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 9: Dynamic Memory</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="memory-allocation">Dynamic Memory Allocation</li>
+                        <li data-lesson="malloc-calloc">Malloc & Calloc</li>
+                        <li data-lesson="realloc">Realloc</li>
+                        <li data-lesson="memory-leaks">Memory Leaks & Management</li>
+                    </ul>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Module 10: Advanced Topics</div>
+                    <ul class="module-lessons">
+                        <li data-lesson="preprocessor">Preprocessor Directives</li>
+                        <li data-lesson="bit-manipulation">Bit Manipulation</li>
+                        <li data-lesson="data-structures">Data Structures</li>
+                        <li data-lesson="algorithms">Algorithms in C</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div id="lesson-content">
+                <div id="welcome-screen">
+                    <h2>Welcome to the Complete C Programming Course</h2>
+                    <p>This interactive course will take you from complete beginner to advanced C programmer.</p>
+                    <p>Select a lesson from the sidebar to begin your learning journey.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <h3>Interactive Coding Environment</h3>
+                            <p>Write, compile, and run C code directly in your browser.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Comprehensive Curriculum</h3>
+                            <p>From the basics to advanced topics, everything you need to master C programming.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Hands-on Exercises</h3>
+                            <p>Practice with real coding challenges and projects to reinforce your learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="code-environment" class="hidden">
+                <div class="editor-container">
+                    <div class="editor-header">
+                        <h3>Code Editor</h3>
+                        <div class="editor-actions">
+                            <button id="run-code">Run</button>
+                            <button id="reset-code">Reset</button>
+                            <button id="show-solution">Show Solution</button>
+                        </div>
+                    </div>
+                    <div id="code-editor"></div>
+                </div>
+                
+                <div class="output-container">
+                    <div class="output-header">
+                        <h3>Output</h3>
+                        <button id="clear-output">Clear</button>
+                    </div>
+                    <div id="code-output"></div>
+                </div>
+            </div>
+            
+            <div id="exercises" class="hidden">
+                <h3>Exercises</h3>
+                <div id="exercise-content"></div>
+                <div class="navigation-buttons">
+                    <button id="prev-lesson">Previous Lesson</button>
+                    <button id="next-lesson">Next Lesson</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 C Programming Course | Created with HTML, CSS, and JavaScript</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.0/ace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/compiler.js"></script>
+    <script src="js/lessons.js"></script>
+</body>
+</html>
