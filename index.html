@@ -1,188 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete C Programming Course</title>
+    <meta name="description" content="Learn programming languages like C, C++, Java, HTML, CSS, and Python for free, or create your own courses to teach others">
+    <title>learnTHIS - Free Programming Courses</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs2015.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/c.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
-        <h1>Complete C Programming Course</h1>
-        <div class="header-buttons">
-            <button id="theme-toggle">Toggle Dark Mode</button>
-            <button id="save-progress">Save Progress</button>
-        </div>
-    </header>
-    
-    <div class="container">
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Course Modules</h3>
-                <button id="toggle-sidebar" class="mobile-only">≡</button>
-            </div>
-            <ul id="course-modules">
-                <li class="module-item">
-                    <div class="module-header">Module 1: Introduction to C</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="intro-to-c">Introduction to C Programming</li>
-                        <li data-lesson="setting-up">Setting Up Your Environment</li>
-                        <li data-lesson="first-program">Your First C Program</li>
-                        <li data-lesson="compilation">Compilation Process</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 2: Basic Syntax & Data Types</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="variables">Variables & Constants</li>
-                        <li data-lesson="data-types">Data Types</li>
-                        <li data-lesson="operators">Operators</li>
-                        <li data-lesson="input-output">Input & Output</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 3: Control Flow</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="if-else">Conditional Statements</li>
-                        <li data-lesson="switch">Switch Statements</li>
-                        <li data-lesson="loops">Loops</li>
-                        <li data-lesson="break-continue">Break & Continue</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 4: Functions</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="functions-intro">Function Basics</li>
-                        <li data-lesson="parameters">Parameters & Return Values</li>
-                        <li data-lesson="recursion">Recursion</li>
-                        <li data-lesson="storage-classes">Storage Classes</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 5: Arrays & Strings</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="arrays">Arrays</li>
-                        <li data-lesson="multi-arrays">Multi-dimensional Arrays</li>
-                        <li data-lesson="strings">Strings</li>
-                        <li data-lesson="string-functions">String Functions</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 6: Pointers</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="pointers-basic">Pointer Basics</li>
-                        <li data-lesson="pointer-arithmetic">Pointer Arithmetic</li>
-                        <li data-lesson="pointers-arrays">Pointers & Arrays</li>
-                        <li data-lesson="pointers-functions">Pointers & Functions</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 7: Structures & Unions</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="structures">Structures</li>
-                        <li data-lesson="nested-structs">Nested Structures</li>
-                        <li data-lesson="unions">Unions</li>
-                        <li data-lesson="typedef">Typedef</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 8: File I/O</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="file-basics">File Handling Basics</li>
-                        <li data-lesson="read-write">Reading & Writing Files</li>
-                        <li data-lesson="binary-files">Binary Files</li>
-                        <li data-lesson="error-handling">Error Handling</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 9: Dynamic Memory</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="memory-allocation">Dynamic Memory Allocation</li>
-                        <li data-lesson="malloc-calloc">Malloc & Calloc</li>
-                        <li data-lesson="realloc">Realloc</li>
-                        <li data-lesson="memory-leaks">Memory Leaks & Management</li>
-                    </ul>
-                </li>
-                <li class="module-item">
-                    <div class="module-header">Module 10: Advanced Topics</div>
-                    <ul class="module-lessons">
-                        <li data-lesson="preprocessor">Preprocessor Directives</li>
-                        <li data-lesson="bit-manipulation">Bit Manipulation</li>
-                        <li data-lesson="data-structures">Data Structures</li>
-                        <li data-lesson="algorithms">Algorithms in C</li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        
-        <main>
-            <div id="lesson-content">
-                <div id="welcome-screen">
-                    <h2>Welcome to the Complete C Programming Course</h2>
-                    <p>This interactive course will take you from complete beginner to advanced C programmer.</p>
-                    <p>Select a lesson from the sidebar to begin your learning journey.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <h3>Interactive Coding Environment</h3>
-                            <p>Write, compile, and run C code directly in your browser.</p>
-                        </div>
-                        <div class="feature">
-                            <h3>Comprehensive Curriculum</h3>
-                            <p>From the basics to advanced topics, everything you need to master C programming.</p>
-                        </div>
-                        <div class="feature">
-                            <h3>Hands-on Exercises</h3>
-                            <p>Practice with real coding challenges and projects to reinforce your learning.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="code-environment" class="hidden">
-                <div class="editor-container">
-                    <div class="editor-header">
-                        <h3>Code Editor</h3>
-                        <div class="editor-actions">
-                            <button id="run-code">Run</button>
-                            <button id="reset-code">Reset</button>
-                            <button id="show-solution">Show Solution</button>
-                        </div>
-                    </div>
-                    <div id="code-editor"></div>
-                </div>
-                
-                <div class="output-container">
-                    <div class="output-header">
-                        <h3>Output</h3>
-                        <button id="clear-output">Clear</button>
-                    </div>
-                    <div id="code-output"></div>
-                </div>
-            </div>
-            
-            <div id="exercises" class="hidden">
-                <h3>Exercises</h3>
-                <div id="exercise-content"></div>
-                <div class="navigation-buttons">
-                    <button id="prev-lesson">Previous Lesson</button>
-                    <button id="next-lesson">Next Lesson</button>
-                </div>
-            </div>
-        </main>
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 C Programming Course | Created with HTML, CSS, and JavaScript</p>
-    </footer>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="learnTHIS homepage">learn<span class="emphasized">THIS</span></a>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.0/ace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/editor.js"></script>
-    <script src="js/compiler.js"></script>
-    <script src="js/lessons.js"></script>
+            <div class="courses-container" role="navigation" aria-label="Course navigation">
+                <a href="C.html" class="course">C</a>
+                <a href="C++.html" class="course">C++</a>
+                <a href="Java.html" class="course">JAVA</a>
+                <a href="HTML.html" class="course">HTML &amp; CSS</a>
+                <a href="Python.html" class="course">PYTHON</a>
+            </div>
+
+            <div class="buttons-container">
+                <a href="browse-courses.html" class="button">BROWSE COURSES</a>
+                <a href="login.html" class="button">LOGIN</a>
+                <a href="signup.html" class="button">SIGNUP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1 class="welcome-title">Master <span id="rotating-text" class="emphasized"
+                    data-courses="C,C++,JAVA,HTML & CSS,PYTHON">coding</span> today</h1>
+            <p class="welcome-subtitle">Learn new skills or share your expertise with our community</p>
+        </section>
+
+        <section class="how-it-works-section" aria-labelledby="how-it-works">
+            <h2 class="section-title" id="how-it-works">How learnTHIS Works</h2>
+            <div class="features-container">
+                <article class="feature-circle">
+                    <h3>Learn Freely</h3>
+                    <p>Access all courses without signing up. Learn at your own pace with no paywalls.</p>
+                </article>
+                <article class="feature-circle">
+                    <h3>Track Progress</h3>
+                    <p>Create an account to save your progress and pick up where you left off.</p>
+                </article>
+                <article class="feature-circle">
+                    <h3>Share Knowledge</h3>
+                    <p>Create your own courses and help others master what you know best.</p>
+                </article>
+                <article class="feature-circle">
+                    <h3>Community Learning</h3>
+                    <p>Join discussions, solve challenges, and collaborate with fellow learners.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="share-knowledge-section" aria-labelledby="share-knowledge">
+            <div class="container">
+                <h2 class="section-title" id="share-knowledge">Share Your Expertise</h2>
+                <p class="share-knowledge-text">Create interactive courses that help others grow. Our intuitive platform makes it easy to organize content and reach learners worldwide.</p>
+                <a href="create-course.html" class="button create-course-btn">CREATE A COURSE</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            © 2025 learnTHIS. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
