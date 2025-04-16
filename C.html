@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn C programming from basics to advanced concepts with free interactive tutorials and exercises">
+    <title>C Programming Course - learnTHIS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="course-page">
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="learnTHIS homepage">learn<span class="emphasized">THIS</span></a>
+
+            <div class="courses-container" role="navigation" aria-label="Course navigation">
+                <a href="C.html" class="course active">C</a>
+                <a href="C++.html" class="course">C++</a>
+                <a href="Java.html" class="course">JAVA</a>
+                <a href="HTML.html" class="course">HTML &amp; CSS</a>
+                <a href="Python.html" class="course">PYTHON</a>
+            </div>
+
+            <div class="buttons-container">
+                <a href="browse-courses.html" class="button">BROWSE COURSES</a>
+                <a href="login.html" class="button">LOGIN</a>
+                <a href="signup.html" class="button">SIGNUP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-header">
+            <div class="container">
+                <span class="course-tag">Programming Language</span>
+                <h1>C Programming <span class="emphasized">Course</span></h1>
+                <p class="course-description">Master the foundational language that powers operating systems, embedded systems, and countless applications. This comprehensive course covers everything from basic syntax to advanced memory management.</p>
+                <div class="course-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">⏱️</span>
+                        <span class="meta-text">40 hours</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">📊</span>
+                        <span class="meta-text">Beginner to Advanced</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">🧩</span>
+                        <span class="meta-text">25 Modules</span>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="#modules" class="button start-button">Start Learning</a>
+                    <button class="button outline-button track-button">Track Progress</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="modules" class="course-modules">
+            <div class="container">
+                <h2 class="section-title">Course Modules</h2>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <span class="module-number">01</span>
+                        <h3>Introduction to C</h3>
+                        <ul class="module-lessons">
+                            <li>History and Importance</li>
+                            <li>Setting Up the Environment</li>
+                            <li>Your First C Program</li>
+                        </ul>
+                        <a href="C/module1.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">02</span>
+                        <h3>Variables & Data Types</h3>
+                        <ul class="module-lessons">
+                            <li>Basic Data Types</li>
+                            <li>Variables Declaration</li>
+                            <li>Type Conversion</li>
+                        </ul>
+                        <a href="C/module2.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">03</span>
+                        <h3>Control Flow</h3>
+                        <ul class="module-lessons">
+                            <li>Conditional Statements</li>
+                            <li>Loops and Iteration</li>
+                            <li>Switch Cases</li>
+                        </ul>
+                        <a href="C/module3.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">04</span>
+                        <h3>Functions</h3>
+                        <ul class="module-lessons">
+                            <li>Function Declaration</li>
+                            <li>Parameters and Return Values</li>
+                            <li>Recursion Basics</li>
+                        </ul>
+                        <a href="C/module4.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">05</span>
+                        <h3>Arrays & Pointers</h3>
+                        <ul class="module-lessons">
+                            <li>Array Declaration and Usage</li>
+                            <li>Introduction to Pointers</li>
+                            <li>Pointer Arithmetic</li>
+                        </ul>
+                        <a href="C/module5.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card locked">
+                        <span class="module-number">06</span>
+                        <h3>Memory Management</h3>
+                        <ul class="module-lessons">
+                            <li>Dynamic Memory Allocation</li>
+                            <li>malloc, calloc and free</li>
+                            <li>Memory Leaks</li>
+                        </ul>
+                        <button class="button module-button" disabled>Locked</button>
+                        <div class="module-lock-message">Complete previous modules to unlock</div>
+                    </div>
+                </div>
+                
+                <div class="load-more-container">
+                    <button id="load-more" class="button outline-button">Load More Modules</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-resources">
+            <div class="container">
+                <h2 class="section-title">Additional Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>Recommended Books</h3>
+                        <ul>
+                            <li>"The C Programming Language" by K&R</li>
+                            <li>"C: The Complete Reference" by Herbert Schildt</li>
+                            <li>"Learn C the Hard Way" by Zed Shaw</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">🧪</div>
+                        <h3>Practice Problems</h3>
+                        <p>Sharpen your skills with our curated collection of coding challenges.</p>
+                        <a href="C/practice.html" class="text-link">Browse Problems</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">👥</div>
+                        <h3>Community Forums</h3>
+                        <p>Discuss concepts, ask questions, and share your solutions with fellow learners.</p>
+                        <a href="forums.html" class="text-link">Join Discussion</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            © 2025 learnTHIS. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="course-script.js"></script>
+</body>
+
+</html>

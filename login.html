@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to learnTHIS to track your progress and access personalized learning resources">
+    <title>Login - learnTHIS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="auth-page">
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="learnTHIS homepage">learn<span class="emphasized">THIS</span></a>
+
+            <div class="courses-container" role="navigation" aria-label="Course navigation">
+                <a href="C.html" class="course">C</a>
+                <a href="C++.html" class="course">C++</a>
+                <a href="Java.html" class="course">JAVA</a>
+                <a href="HTML.html" class="course">HTML &amp; CSS</a>
+                <a href="Python.html" class="course">PYTHON</a>
+            </div>
+
+            <div class="buttons-container">
+                <a href="browse-courses.html" class="button">BROWSE COURSES</a>
+                <a href="login.html" class="button active">LOGIN</a>
+                <a href="signup.html" class="button">SIGNUP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <span class="auth-tag">user_authentication</span>
+                    <h1>Login <span class="emphasized">( )</span></h1>
+                    <p class="auth-subtitle">// Access your account to track progress</p>
+                </div>
+                
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="email">email<span class="required">*</span></label>
+                        <div class="input-container">
+                            <span class="input-prefix">@</span>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required autocomplete="email">
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">password<span class="required">*</span></label>
+                        <div class="input-container">
+                            <span class="input-prefix">#</span>
+                            <input type="password" id="password" name="password" placeholder="••••••••" required autocomplete="current-password">
+                            <div class="input-line"></div>
+                            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                <span class="eye-icon">👁️</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember" class="custom-checkbox">
+                            <label for="remember">remember_session</label>
+                        </div>
+                        <a href="forgot-password.html" class="forgot-link">forgot_password?</a>
+                    </div>
+                    
+                    <button type="submit" class="auth-button">
+                        <span class="button-text">LOGIN</span>
+                        <span class="button-icon">→</span>
+                    </button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="social-button github">
+                        <span class="social-icon">GH</span>
+                        <span>continue_with("GitHub")</span>
+                    </button>
+                    <button type="button" class="social-button google">
+                        <span class="social-icon">G</span>
+                        <span>continue_with("Google")</span>
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p class="auth-footer-text">new_user? <a href="signup.html">signup()</a></p>
+                </div>
+            </div>
+
+            <div class="auth-decoration">
+                <div class="code-snippet">
+                    <pre><code>
+function authenticate(user) {
+  if (validate(user.email) && 
+      validate(user.password)) {
+    return session.create({
+      uid: user.id,
+      expires: remember ? 
+        '30d' : '24h'
+    });
+  }
+  throw new AuthError('Invalid credentials');
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            © 2025 learnTHIS. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="auth-script.js"></script>
+</body>
+
+</html>

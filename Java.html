@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Java programming from foundations to advanced topics including OOP, collections, and enterprise development">
+    <title>Java Programming Course - learnTHIS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="course-page">
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="learnTHIS homepage">learn<span class="emphasized">THIS</span></a>
+
+            <div class="courses-container" role="navigation" aria-label="Course navigation">
+                <a href="C.html" class="course">C</a>
+                <a href="C++.html" class="course">C++</a>
+                <a href="Java.html" class="course active">JAVA</a>
+                <a href="HTML.html" class="course">HTML &amp; CSS</a>
+                <a href="Python.html" class="course">PYTHON</a>
+            </div>
+
+            <div class="buttons-container">
+                <a href="browse-courses.html" class="button">BROWSE COURSES</a>
+                <a href="login.html" class="button">LOGIN</a>
+                <a href="signup.html" class="button">SIGNUP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-header">
+            <div class="container">
+                <span class="course-tag">Programming Language</span>
+                <h1>Java Programming <span class="emphasized">Course</span></h1>
+                <p class="course-description">Explore the world of platform-independent programming with Java. From core concepts to enterprise development, this course covers everything you need to build robust applications in one of the most popular programming languages.</p>
+                <div class="course-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">⏱️</span>
+                        <span class="meta-text">50 hours</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">📊</span>
+                        <span class="meta-text">Beginner to Advanced</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">🧩</span>
+                        <span class="meta-text">35 Modules</span>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="#modules" class="button start-button">Start Learning</a>
+                    <button class="button outline-button track-button">Track Progress</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="modules" class="course-modules">
+            <div class="container">
+                <h2 class="section-title">Course Modules</h2>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <span class="module-number">01</span>
+                        <h3>Java Fundamentals</h3>
+                        <ul class="module-lessons">
+                            <li>JDK Setup and Environment</li>
+                            <li>Basic Syntax and Structure</li>
+                            <li>Variables and Data Types</li>
+                        </ul>
+                        <a href="Java/module1.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">02</span>
+                        <h3>Object-Oriented Java</h3>
+                        <ul class="module-lessons">
+                            <li>Classes and Objects</li>
+                            <li>Inheritance and Interfaces</li>
+                            <li>Polymorphism and Encapsulation</li>
+                        </ul>
+                        <a href="Java/module2.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">03</span>
+                        <h3>Java Collections Framework</h3>
+                        <ul class="module-lessons">
+                            <li>Lists, Sets, and Maps</li>
+                            <li>Iterators and Comparators</li>
+                            <li>Generics in Collections</li>
+                        </ul>
+                        <a href="Java/module3.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">04</span>
+                        <h3>Exception Handling</h3>
+                        <ul class="module-lessons">
+                            <li>Try-Catch Blocks</li>
+                            <li>Custom Exceptions</li>
+                            <li>Best Practices</li>
+                        </ul>
+                        <a href="Java/module4.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">05</span>
+                        <h3>Multithreading</h3>
+                        <ul class="module-lessons">
+                            <li>Thread Creation and Lifecycle</li>
+                            <li>Synchronization</li>
+                            <li>Concurrent Collections</li>
+                        </ul>
+                        <a href="Java/module5.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card locked">
+                        <span class="module-number">06</span>
+                        <h3>Java I/O and Networking</h3>
+                        <ul class="module-lessons">
+                            <li>File Handling</li>
+                            <li>Serialization</li>
+                            <li>Socket Programming</li>
+                        </ul>
+                        <button class="button module-button" disabled>Locked</button>
+                        <div class="module-lock-message">Complete previous modules to unlock</div>
+                    </div>
+                </div>
+                
+                <div class="load-more-container">
+                    <button id="load-more" class="button outline-button">Load More Modules</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-resources">
+            <div class="container">
+                <h2 class="section-title">Additional Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>Recommended Books</h3>
+                        <ul>
+                            <li>"Effective Java" by Joshua Bloch</li>
+                            <li>"Head First Java" by Kathy Sierra</li>
+                            <li>"Java: The Complete Reference" by Herbert Schildt</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">🧪</div>
+                        <h3>Practice Problems</h3>
+                        <p>Enhance your Java skills with our collection of coding exercises and projects.</p>
+                        <a href="Java/practice.html" class="text-link">Browse Problems</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">👥</div>
+                        <h3>Community Forums</h3>
+                        <p>Discuss concepts, ask questions, and share your solutions with fellow learners.</p>
+                        <a href="forums.html" class="text-link">Join Discussion</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            © 2025 learnTHIS. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="course-script.js"></script>
+</body>
+
+</html>

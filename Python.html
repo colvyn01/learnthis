@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Python programming from basics to advanced topics like data science, web development, and automation">
+    <title>Python Programming Course - learnTHIS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="course-page">
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="learnTHIS homepage">learn<span class="emphasized">THIS</span></a>
+
+            <div class="courses-container" role="navigation" aria-label="Course navigation">
+                <a href="C.html" class="course">C</a>
+                <a href="C++.html" class="course">C++</a>
+                <a href="Java.html" class="course">JAVA</a>
+                <a href="HTML.html" class="course">HTML &amp; CSS</a>
+                <a href="Python.html" class="course active">PYTHON</a>
+            </div>
+
+            <div class="buttons-container">
+                <a href="browse-courses.html" class="button">BROWSE COURSES</a>
+                <a href="login.html" class="button">LOGIN</a>
+                <a href="signup.html" class="button">SIGNUP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-header">
+            <div class="container">
+                <span class="course-tag">Programming Language</span>
+                <h1>Python Programming <span class="emphasized">Course</span></h1>
+                <p class="course-description">Discover why Python is one of the most popular programming languages in the world. From basic syntax to advanced applications in data science, web development, and automation, this course provides a comprehensive learning path.</p>
+                <div class="course-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">⏱️</span>
+                        <span class="meta-text">40 hours</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">📊</span>
+                        <span class="meta-text">Beginner to Advanced</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">🧩</span>
+                        <span class="meta-text">28 Modules</span>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="#modules" class="button start-button">Start Learning</a>
+                    <button class="button outline-button track-button">Track Progress</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="modules" class="course-modules">
+            <div class="container">
+                <h2 class="section-title">Course Modules</h2>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <span class="module-number">01</span>
+                        <h3>Python Basics</h3>
+                        <ul class="module-lessons">
+                            <li>Setting Up the Environment</li>
+                            <li>Variables and Data Types</li>
+                            <li>Control Flow</li>
+                        </ul>
+                        <a href="Python/module1.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">02</span>
+                        <h3>Data Structures</h3>
+                        <ul class="module-lessons">
+                            <li>Lists and Tuples</li>
+                            <li>Dictionaries and Sets</li>
+                            <li>List Comprehensions</li>
+                        </ul>
+                        <a href="Python/module2.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">03</span>
+                        <h3>Functions and Modules</h3>
+                        <ul class="module-lessons">
+                            <li>Defining and Using Functions</li>
+                            <li>Lambda Functions</li>
+                            <li>Creating and Importing Modules</li>
+                        </ul>
+                        <a href="Python/module3.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">04</span>
+                        <h3>Object-Oriented Python</h3>
+                        <ul class="module-lessons">
+                            <li>Classes and Objects</li>
+                            <li>Inheritance and Polymorphism</li>
+                            <li>Magic Methods</li>
+                        </ul>
+                        <a href="Python/module4.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">05</span>
+                        <h3>File Handling and Exceptions</h3>
+                        <ul class="module-lessons">
+                            <li>Reading and Writing Files</li>
+                            <li>Working with JSON and CSV</li>
+                            <li>Error Handling</li>
+                        </ul>
+                        <a href="Python/module5.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card locked">
+                        <span class="module-number">06</span>
+                        <h3>Data Science Basics</h3>
+                        <ul class="module-lessons">
+                            <li>NumPy Introduction</li>
+                            <li>Pandas for Data Analysis</li>
+                            <li>Matplotlib for Visualization</li>
+                        </ul>
+                        <button class="button module-button" disabled>Locked</button>
+                        <div class="module-lock-message">Complete previous modules to unlock</div>
+                    </div>
+                </div>
+                
+                <div class="load-more-container">
+                    <button id="load-more" class="button outline-button">Load More Modules</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-resources">
+            <div class="container">
+                <h2 class="section-title">Additional Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>Recommended Books</h3>
+                        <ul>
+                            <li>"Python Crash Course" by Eric Matthes</li>
+                            <li>"Automate the Boring Stuff with Python" by Al Sweigart</li>
+                            <li>"Fluent Python" by Luciano Ramalho</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">🧪</div>
+                        <h3>Practice Problems</h3>
+                        <p>Strengthen your Python skills with our collection of coding exercises and projects.</p>
+                        <a href="Python/practice.html" class="text-link">Browse Problems</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">👥</div>
+                        <h3>Community Forums</h3>
+                        <p>Discuss concepts, ask questions, and share your solutions with fellow learners.</p>
+                        <a href="forums.html" class="text-link">Join Discussion</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            © 2025 learnTHIS. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="course-script.js"></script>
+</body>
+
+</html>

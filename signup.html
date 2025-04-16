@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create an account on learnTHIS to track your progress and create your own courses">
+    <title>Sign Up - learnTHIS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="auth-page">
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="learnTHIS homepage">learn<span class="emphasized">THIS</span></a>
+
+            <div class="courses-container" role="navigation" aria-label="Course navigation">
+                <a href="C.html" class="course">C</a>
+                <a href="C++.html" class="course">C++</a>
+                <a href="Java.html" class="course">JAVA</a>
+                <a href="HTML.html" class="course">HTML &amp; CSS</a>
+                <a href="Python.html" class="course">PYTHON</a>
+            </div>
+
+            <div class="buttons-container">
+                <a href="browse-courses.html" class="button">BROWSE COURSES</a>
+                <a href="login.html" class="button">LOGIN</a>
+                <a href="signup.html" class="button active">SIGNUP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <span class="auth-tag">new_user_registration</span>
+                    <h1>Create <span class="emphasized">Account</span></h1>
+                    <p class="auth-subtitle">// Join our community to learn and share knowledge</p>
+                </div>
+                
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="username">username<span class="required">*</span></label>
+                        <div class="input-container">
+                            <span class="input-prefix">&gt;</span>
+                            <input type="text" id="username" name="username" placeholder="yourname" required autocomplete="username">
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="input-hint">Must be unique, 3-20 characters</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">email<span class="required">*</span></label>
+                        <div class="input-container">
+                            <span class="input-prefix">@</span>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required autocomplete="email">
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="newPassword">password<span class="required">*</span></label>
+                        <div class="input-container">
+                            <span class="input-prefix">#</span>
+                            <input type="password" id="newPassword" name="newPassword" placeholder="••••••••" required autocomplete="new-password">
+                            <div class="input-line"></div>
+                            <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                <span class="eye-icon">👁️</span>
+                            </button>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-meter">
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                                <div class="strength-segment"></div>
+                            </div>
+                            <span class="strength-text">Weak</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">confirm_password<span class="required">*</span></label>
+                        <div class="input-container">
+                            <span class="input-prefix">#</span>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required autocomplete="new-password">
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-agreement">
+                        <input type="checkbox" id="terms" name="terms" class="custom-checkbox" required>
+                        <label for="terms">I agree to the <a href="terms.html" target="_blank">terms_and_conditions()</a> and <a href="privacy.html" target="_blank">privacy_policy()</a></label>
+                    </div>
+                    
+                    <button type="submit" class="auth-button">
+                        <span class="button-text">CREATE ACCOUNT</span>
+                        <span class="button-icon">→</span>
+                    </button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="social-button github">
+                        <span class="social-icon">GH</span>
+                        <span>continue_with("GitHub")</span>
+                    </button>
+                    <button type="button" class="social-button google">
+                        <span class="social-icon">G</span>
+                        <span>continue_with("Google")</span>
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p class="auth-footer-text">already_registered? <a href="login.html">login()</a></p>
+                </div>
+            </div>
+
+            <div class="auth-decoration">
+                <div class="code-snippet">
+                    <pre><code>
+class User extends Entity {
+  constructor(username, email, password) {
+    super();
+    this.username = username;
+    this.email = email;
+    this.password = hash(password);
+    this.created = Date.now();
+    this.courses = [];
+    this.progress = new Map();
+  }
+
+  async save() {
+    // Save user to database
+    return db.users.create(this);
+  }
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            © 2025 learnTHIS. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="auth-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML and CSS from scratch to create beautiful, responsive websites with interactive lessons and projects">
+    <title>HTML & CSS Course - learnTHIS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="course-page">
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="learnTHIS homepage">learn<span class="emphasized">THIS</span></a>
+
+            <div class="courses-container" role="navigation" aria-label="Course navigation">
+                <a href="C.html" class="course">C</a>
+                <a href="C++.html" class="course">C++</a>
+                <a href="Java.html" class="course">JAVA</a>
+                <a href="HTML.html" class="course active">HTML &amp; CSS</a>
+                <a href="Python.html" class="course">PYTHON</a>
+            </div>
+
+            <div class="buttons-container">
+                <a href="browse-courses.html" class="button">BROWSE COURSES</a>
+                <a href="login.html" class="button">LOGIN</a>
+                <a href="signup.html" class="button">SIGNUP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-header">
+            <div class="container">
+                <span class="course-tag">Web Development</span>
+                <h1>HTML & CSS <span class="emphasized">Course</span></h1>
+                <p class="course-description">Build the foundation of the web with HTML and CSS. From basic page structure to responsive designs, learn how to create visually appealing and functional websites that work across all devices.</p>
+                <div class="course-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">⏱️</span>
+                        <span class="meta-text">35 hours</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">📊</span>
+                        <span class="meta-text">Beginner to Intermediate</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">🧩</span>
+                        <span class="meta-text">20 Modules</span>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="#modules" class="button start-button">Start Learning</a>
+                    <button class="button outline-button track-button">Track Progress</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="modules" class="course-modules">
+            <div class="container">
+                <h2 class="section-title">Course Modules</h2>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <span class="module-number">01</span>
+                        <h3>HTML Fundamentals</h3>
+                        <ul class="module-lessons">
+                            <li>Document Structure</li>
+                            <li>Essential HTML Tags</li>
+                            <li>Semantic Markup</li>
+                        </ul>
+                        <a href="HTML/module1.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">02</span>
+                        <h3>CSS Basics</h3>
+                        <ul class="module-lessons">
+                            <li>Selectors and Properties</li>
+                            <li>The Box Model</li>
+                            <li>Color and Typography</li>
+                        </ul>
+                        <a href="HTML/module2.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">03</span>
+                        <h3>Layout Techniques</h3>
+                        <ul class="module-lessons">
+                            <li>Flexbox</li>
+                            <li>CSS Grid</li>
+                            <li>Positioning Elements</li>
+                        </ul>
+                        <a href="HTML/module3.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">04</span>
+                        <h3>Responsive Design</h3>
+                        <ul class="module-lessons">
+                            <li>Media Queries</li>
+                            <li>Mobile-First Approach</li>
+                            <li>Responsive Images</li>
+                        </ul>
+                        <a href="HTML/module4.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card">
+                        <span class="module-number">05</span>
+                        <h3>Forms and Validation</h3>
+                        <ul class="module-lessons">
+                            <li>Form Elements</li>
+                            <li>Input Types and Attributes</li>
+                            <li>Client-Side Validation</li>
+                        </ul>
+                        <a href="HTML/module5.html" class="button module-button">Begin</a>
+                    </div>
+                    
+                    <div class="module-card locked">
+                        <span class="module-number">06</span>
+                        <h3>CSS Animation</h3>
+                        <ul class="module-lessons">
+                            <li>Transitions</li>
+                            <li>Keyframe Animations</li>
+                            <li>Transform Properties</li>
+                        </ul>
+                        <button class="button module-button" disabled>Locked</button>
+                        <div class="module-lock-message">Complete previous modules to unlock</div>
+                    </div>
+                </div>
+                
+                <div class="load-more-container">
+                    <button id="load-more" class="button outline-button">Load More Modules</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="course-resources">
+            <div class="container">
+                <h2 class="section-title">Additional Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>Recommended Books</h3>
+                        <ul>
+                            <li>"HTML and CSS: Design and Build Websites" by Jon Duckett</li>
+                            <li>"CSS Secrets" by Lea Verou</li>
+                            <li>"Responsive Web Design" by Ethan Marcotte</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">🧪</div>
+                        <h3>Practice Projects</h3>
+                        <p>Apply your HTML & CSS skills by building real-world website projects.</p>
+                        <a href="HTML/projects.html" class="text-link">Browse Projects</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">👥</div>
+                        <h3>Community Forums</h3>
+                        <p>Share your designs, get feedback, and learn from other web developers.</p>
+                        <a href="forums.html" class="text-link">Join Discussion</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            © 2025 learnTHIS. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="course-script.js"></script>
+</body>
+
+</html>
